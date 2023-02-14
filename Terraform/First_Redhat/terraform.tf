@@ -4,7 +4,7 @@ terraform {
     organization = "Modrakovic"
 
     workspaces {
-      name = "AWS-Linux"
+      name = "Traject"
     }
   }
 
