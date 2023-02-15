@@ -19,7 +19,7 @@ data "aws_ami" "ubuntu" {
 
   owners = ["099720109477"] # Canonical
 }
-
+*/ 
 
 resource "aws_instance" "redhat8" {
   ami           = var.redhat_ami
@@ -29,5 +29,3 @@ resource "aws_instance" "redhat8" {
     Name = var.instance_name
   }
 }
-
-*/
