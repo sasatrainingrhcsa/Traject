@@ -21,12 +21,12 @@ data "aws_ami" "ubuntu" {
 }
 */
 
-# resource "aws_instance" "redhat8" {
-#   ami           = var.redhat_ami
-#   instance_type = var.instance_type
-#
-#   tags = {
-#     Name = var.instance_name
-#   }
-# }
-#
+ resource "aws_instance" "redhat8" {
+   ami           = var.redhat_ami
+   instance_type = var.instance_type
+
+   tags = {
+     Name = var.instance_name
+   }
+ }
+
