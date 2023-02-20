@@ -17,3 +17,8 @@ variable "redhat_ami" {
   description = "Redhat AMI"
   default     = "ami-03f255060aa887525"
 }
+
+variable "instance_count" {
+  type    = string
+  default = null
+}
