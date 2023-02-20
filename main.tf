@@ -1,9 +1,4 @@
 /*
-provider "aws" {
-  region = var.region
-}
-
-amazon/RHEL-9.0.0_HVM-20230127-x86_64-24-Hourly2-GP2
 data "aws_ami" "ubuntu" {
   most_recent = true
 
@@ -21,12 +16,12 @@ data "aws_ami" "ubuntu" {
 }
 */
 
- resource "aws_instance" "redhat8" {
-   ami           = var.redhat_ami
-   instance_type = var.instance_type
+resource "aws_instance" "redhat8" {
+  ami           = var.redhat_ami
+  count         = 2
+  instance_type = var.instance_type
 
-   tags = {
-     Name = var.instance_name
-   }
- }
-
+  tags = {
+    Name = var.instance_name
+  }
+}
