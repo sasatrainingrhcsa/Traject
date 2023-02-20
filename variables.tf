@@ -10,7 +10,7 @@ variable "instance_type" {
 
 variable "instance_name" {
   description = "EC2 instance name"
-  default     = "Red Hat 9 met terraform"
+  default     = "RedHat9.1"
 }
 
 variable "redhat_ami" {
