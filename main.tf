@@ -18,7 +18,7 @@ data "aws_ami" "ubuntu" {
 
 resource "aws_instance" "redhat8" {
   ami           = var.redhat_ami
-  count         = 2
+  count         = 0
   instance_type = var.instance_type
 
   tags = {
