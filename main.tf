@@ -7,7 +7,7 @@ resource "aws_instance" "redhat9_1" {
   #!/bin/bash
 
   apt update
-  subscription-manager register --username ec2-uaer --password *!M@n@g3r!* --auto-attach
+  subscription-manager register --username sasaguzi --password 12M@n@g3r12 --auto-attach
   EOL
 
   tags = {
