@@ -19,7 +19,7 @@ resource "aws_instance" "redhat9_1" {
     }
 
     tags = {
-      Name = "${var.instance_name}_${count.index + 1}"
+      Name = "${var.instance_name}_${count.index}"
     }
   }
 }
