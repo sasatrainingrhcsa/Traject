@@ -19,8 +19,7 @@ resource "aws_instance" "redhat9_1" {
     }
 
     tags = {
-      for_each
-      Name = "${var.instance_name}_${count.index}"
+      Name = "${var.instance_name}_${count.index + 1}"
     }
   }
 }
